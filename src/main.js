@@ -5,7 +5,7 @@ const projects = [
     description: 'Find where your favorite sites are hosted!',
     tags: ['TypeScript', 'Leaflet', 'Tailwind'],
     git: 'https://github.com/dmfiel/ps-ip-address-tracker',
-    link: 'http://fiel.us/ip-tracker',
+    link: 'https://fiel.us/ip-tracker',
     screenshot: 'src/screenshot-ip-tracker.png',
     alt: 'Details for the 1.1.1.1 IP address in Brisbane, Australia'
   },
@@ -14,7 +14,7 @@ const projects = [
     description: 'The classic, enhanced in multiple ways',
     tags: ['JavaScript', 'HTML', 'CSS'],
     git: 'https://github.com/dmfiel/game-of-life',
-    link: 'http://fiel.us/life/index.htm',
+    link: 'https://fiel.us/life/index.htm',
     screenshot: 'src/Screenshot-Life.png',
     alt: 'A 15x15 grid of cells with a glider and two flippers that will run continously'
   },
@@ -78,7 +78,7 @@ function renderProjects() {
         </a>
       </div>
       <div class="project-screenshot">
-        <a href="${project.link}" target=_blank
+        <a href="${project.link}" target=_blank class="screeshot-link"
         aria-label="Live link for ${project.title}">
           <img src="${project.screenshot}" alt="${project.alt}" 
            width=200px height=200px />

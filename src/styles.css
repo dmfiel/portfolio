@@ -160,6 +160,10 @@ h3 {
   text-align: center;
 }
 
+.screeshot-link {
+  backdrop-filter: blur(8px);
+}
+
 .project-screenshot img {
   border: solid lightgrey 1px;
 }
