@@ -16,38 +16,34 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/src/apple-touch-icon.png"
+      href="https://fiel.us/src/apple-touch-icon.png"
     />
+    <link rel="icon" sizes="48x48" href="https://fiel.us/favicon.ico" />
     <link
       rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/src/favicon-32x32.png"
+      href="https://fiel.us/src/f-logo-purple-transparent.svg"
+      type="image/svg+xml"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/src/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/src/site.webmanifest" />
+    <link rel="manifest" href="https://fiel.us/src/manifest.webmanifest" />
   </head>
   <body>
     <div class="min-h-screen gradient-bg">
       <!-- Hero Section -->
-      <section class="container">
+      <header class="container" role="banner">
         <div class="hero fade-up">
-          <h1>Crafting Integrated Solutions</h1>
+          <h1>David Fiel</h1>
+          <h2>Crafting Integrated Solutions</h2>
           <p>
             Full-stack developer ranging from award-winning communities down to
             the database
           </p>
-          <div class="social-links">
+          <nav class="social-links" role="navigation">
             <a
               href="https://github.com/dmfiel"
               target="_blank"
               rel="noopener noreferrer"
               class="social-icon"
+              aria-label="David Fiel's GitHub"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,6 +67,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="social-icon"
+              aria-label="David Fiel's LinkedIn"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +87,11 @@
                 <circle cx="4" cy="4" r="2" />
               </svg>
             </a>
-            <a href="mailto:david@fiel.us" class="social-icon">
+            <a
+              href="mailto:david@fiel.us"
+              class="social-icon"
+              aria-label="David Fiel's email"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -106,22 +107,22 @@
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
             </a>
-          </div>
+          </nav>
         </div>
-      </section>
+      </header>
 
       <!-- Projects Section -->
-      <section class="container">
-        <h2>Featured Projects</h2>
+      <main class="container" role="main">
+        <h3>Featured Projects</h3>
         <div class="projects-grid" id="projects-grid">
           <!-- Projects will be inserted here by JavaScript -->
         </div>
-      </section>
+      </main>
 
       <!-- Contact Section -->
       <section class="container">
         <div class="contact-section">
-          <h2>Contact</h2>
+          <h3>Contact</h3>
           <p>
             I'm always interested in hearing about new projects and
             opportunities.
@@ -145,13 +146,16 @@
           </a>
         </div>
       </section>
-      <div class="attrib">
+      <footer
+        role="contentinfo"
+        style="text-align: center; font-size: 8pt; color: black"
+      >
         <a
           href="https://www.flaticon.com/free-icons/letter-f"
           title="letter f icons"
           ><p>Letter f icons created by rashedul.islam - Flaticon</p></a
         >
-      </div>
+      </footer>
     </div>
 
     <script src="/src/main.js"></script>

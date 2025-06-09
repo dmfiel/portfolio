@@ -1,17 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Figtree', system-ui, -apple-system, sans-serif;
   --background: #ffffff;
   --foreground: #0f172a;
   --accent: #4fd1c5;
   --accent-foreground: #ffffff;
   --secondary: #b9cde0;
   --border: #e2e8f0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -27,23 +22,31 @@ body {
 }
 
 .container {
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .hero {
-  max-width: 48rem;
-  margin: 3rem auto 0;
+  max-width: 60 rem;
+  margin: 1rem auto 0;
   text-align: center;
 }
 
 .hero h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin: 0rem;
 }
-
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
 .hero p {
   font-size: 1.25rem;
   color: rgba(15, 23, 42, 0.8);
@@ -57,13 +60,22 @@ body {
 }
 
 .social-icon {
-  padding: 0.5rem;
+  margin: 0;
+  padding: 0;
   border-radius: 9999px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--foreground);
   transition: background-color 0.3s;
+  height: 40px;
+  width: 40px;
+}
+.social-icon svg {
+  height: 24px;
+  width: 24px;
+  padding: 0.5rem;
+  margin: 0;
 }
 
 .social-icon:hover {
@@ -72,12 +84,22 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, 350px);
+  grid-auto-flow: row;
+  grid-template-rows: 1fr;
+  /* make all rows equal height */
+  /* grid-auto-rows: 1fr; */
   gap: 1.5rem;
   margin-top: 1rem;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   position: relative;
   padding: 1.5rem;
   border-radius: 0.75rem;
@@ -116,18 +138,22 @@ body {
 .project-title {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  text-align: center;
 }
 
 .project-description {
   color: rgba(15, 23, 42, 0.7);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: auto;
+  justify-content: center;
 }
 
 .project-screenshot {
@@ -149,7 +175,7 @@ body {
 
 .contact-section {
   max-width: 36rem;
-  margin: 6rem auto;
+  margin: 2rem auto;
   text-align: center;
 }
 
@@ -180,12 +206,6 @@ body {
   background-color: rgba(79, 209, 197, 0.9);
 }
 
-.attrib a {
-  text-align: center;
-  font-size: 8pt;
-  color: black;
-}
-
 .fade-up {
   opacity: 0;
   animation: fadeUp 0.6s ease-out forwards;
@@ -206,12 +226,14 @@ body {
   .hero h1 {
     font-size: 2.5rem;
   }
-
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    margin: 0;
+  }
   .hero p {
     font-size: 1.125rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
+    margin-bottom: 0.5rem;
   }
 }
