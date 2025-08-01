@@ -1,13 +1,31 @@
 // Project data
 const projects = [
   {
+    title: 'Shopping Penguin',
+    description: 'Organize your shopping with elegant simplicity',
+    tags: ['React', 'TypeScript', 'Express', 'Node', 'MongoDB'],
+    git: 'https://github.com/dmfiel/shopping-penguin',
+    link: 'https://fiel.us/shopping-penguin/',
+    screenshot: 'src/screenshot-shopping-penguin.png',
+    alt: 'Grocery shopping list for produce and dairy'
+  },
+  {
     title: 'Web Address Tracker',
-    description: 'Find where your favorite sites are hosted!',
-    tags: ['TypeScript', 'Leaflet', 'Tailwind'],
+    description: 'Find where your favorite sites are hosted',
+    tags: ['React', 'TypeScript', 'Leaflet', 'Tailwind'],
     git: 'https://github.com/dmfiel/ps-ip-address-tracker',
-    link: 'https://fiel.us/ip-tracker',
+    link: 'https://fiel.us/ip-flag-tracker/',
     screenshot: 'src/screenshot-ip-tracker.png',
     alt: 'Details for the 1.1.1.1 IP address in Brisbane, Australia'
+  },
+  {
+    title: 'Pro Tasker',
+    description: 'A full-stack application for project and task management',
+    tags: ['React', 'TypeScript', 'Tailwind', 'Express', 'MongoDB'],
+    git: 'https://github.com/dmfiel/ps-mod18-pro-tasker-front-end',
+    link: 'https://fiel.us/pro-tasker/',
+    screenshot: 'src/screenshot-pro-tasker.png',
+    alt: 'Graduation Project display with tasks'
   },
   {
     title: 'Game of Life',
